@@ -26,16 +26,17 @@ make menuconfig
 # Network -> vlmcsd = M
 ```
 
-Then build everything as usual:
+Then build it:
 
 ```bash
-make -j$(nproc) V=s world
+make package/vlmcsd/clean
+make -j$(nproc) V=s package/vlmcsd/compile
 ```
 
 And find the package:
 
 ```bash
-ls -lah ./bin/packages/*/vlmcsd/vlmcsd_*.ipk
+ls -lh ./bin/packages/*/vlmcsd/vlmcsd_*.ipk
 ```
 
 ## How to install and configure
