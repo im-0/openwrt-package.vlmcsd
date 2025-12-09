@@ -78,3 +78,5 @@ Restart `dnsmasq`:
 ```
 
 And make sure that Windows machine uses DHCP for network configuration.
+Also, make sure that TCP port 1688 on your router is accessible from
+local network.
